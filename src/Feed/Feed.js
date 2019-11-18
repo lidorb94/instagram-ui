@@ -1,21 +1,26 @@
 import React from "react";
 import "./Feed.scss";
 import Post from "./Post/Post";
+import { trackPromise } from "react-promise-tracker";
 
 class Feed extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      posts: []
+      posts: [],
+      data: "",
+      loading: true
     };
   }
 
   componentDidMount() {
-    fetch("https://my-json-server.typicode.com/evyros/fake-api/posts")
-      .then(res => res.json())
-      .then(posts => {
-        this.setState({ posts });
-      });
+    trackPromise(
+      fetch("https://my-json-server.typicode.com/evyros/fake-api/posts")
+        .then(res => res.json())
+        .then(posts => {
+          this.setState({ posts });
+        })
+    );
   }
 
   render() {
@@ -23,8 +28,13 @@ class Feed extends React.Component {
       <div className="container">
         {this.state.posts.map(post => {
           return (
-            <Post image={post.image} title={post.title} likes={post.likes}/>
-          )
+            <Post
+              image={post.image}
+              title={post.title}
+              likes={post.likes}
+              tags={post.tags}
+            />
+          );
         })}
       </div>
     );

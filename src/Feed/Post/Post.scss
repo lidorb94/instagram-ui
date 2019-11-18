@@ -1,26 +1,34 @@
 .post {
     display: flex;
     flex-direction: column;
-    width: 500px;
+    width: 330px;
+    height: 100% ;
     border: 1px solid lightgrey;
     margin: 20px;
-
+    padding: 5px;
+    // background: palevioletred;
+    text-align: left;
 
     img {
-        width: 500px;
+        max-width: 100%;
+        max-height: 100%;
     }
 
-    h1,p {
+    h1,p, .TagList {
         margin: 0;
         padding-left: 10px;
     }
 
     h1 {
         font-size: 15px;
-        padding-bottom: 15px;
     }
 
     p {
         padding-top: 15px;
     }
+
+    .TagList {
+        padding-bottom: 15px;
+    }
+    
 }
