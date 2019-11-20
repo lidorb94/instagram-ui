@@ -31,10 +31,6 @@ class Post extends React.Component {
       });
   }
 
-  // unixToDate() {
-  //   let date = new Date()
-  // }
-
   render() {
     return (
       <div className="post">
