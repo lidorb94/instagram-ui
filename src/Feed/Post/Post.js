@@ -39,6 +39,7 @@ class Post extends React.Component {
     return (
       <div className="post">
         <div className="UserName">
+          
           <FontAwesomeIcon icon={faUserCircle} size="lg" /> Username
         </div>
         <img src={this.props.image} />
