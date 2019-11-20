@@ -7,9 +7,7 @@ class Feed extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      posts: [],
-      data: "",
-      loading: true
+      posts: []
     };
   }
 
@@ -33,6 +31,7 @@ class Feed extends React.Component {
               title={post.title}
               likes={post.likes}
               tags={post.tags}
+              created={post.created}
             />
           );
         })}

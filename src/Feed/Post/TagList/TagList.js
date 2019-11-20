@@ -16,17 +16,13 @@ import "./TagList.scss";
 class TagList extends React.Component {
   render() {
     return (
-      <div className="TagList">
-        <p>{this.props.children}</p>
+      <div className="Tags">
+        {this.props.tags.map(tag => {
+          return <span className="Tag">#{tag}</span>;
+        })}
       </div>
     );
   }
 }
 
 export default TagList;
-
-// {this.props.tags.map(tag => {
-//     return (
-//     <span className="Tag"> {tag}</span>
-//     )
-//   })}

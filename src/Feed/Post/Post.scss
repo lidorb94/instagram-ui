@@ -1,34 +1,50 @@
 .post {
+  display: flex;
+  flex-direction: column;
+  width: 330px;
+  height: 100%;
+  border: 1px solid lightgrey;
+  margin: 20px;
+  text-align: left;
+  background-color: #FEFEFE;
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  h1, p, .Date {
+    margin: 0;
+    padding-left: 10px;
+  }
+
+  h1 {
+    font-size: 15px;
+  }
+
+  p {
+    padding-top: 15px;
+  }
+
+  .Tags {
+    padding-top: 10px;
     display: flex;
-    flex-direction: column;
-    width: 330px;
-    height: 100% ;
-    border: 1px solid lightgrey;
-    margin: 20px;
-    padding: 5px;
-    // background: palevioletred;
-    text-align: left;
+    flex-wrap: wrap;
+  }
 
-    img {
-        max-width: 100%;
-        max-height: 100%;
-    }
+  .Date {
+    font-size: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: grey;
+  }
 
-    h1,p, .TagList {
-        margin: 0;
-        padding-left: 10px;
-    }
+  .UserName {
+    padding: 5px 0 5px 5px;
+    margin: 10px;
+  }
 
-    h1 {
-        font-size: 15px;
-    }
-
-    p {
-        padding-top: 15px;
-    }
-
-    .TagList {
-        padding-bottom: 15px;
-    }
-    
+  .Heart {
+    color:#E41317;
+  }
 }
