@@ -8,7 +8,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 class App extends React.Component {
   render() {
     return (
-      <Router basename={process.env.PUBLIC_URL}>
+        <Router>
         <div className="App">
           <Header />
           <main>
@@ -22,7 +22,7 @@ class App extends React.Component {
             </Switch>
           </main>
         </div>
-      </Router>
+        </Router>
     );
   }
 }

@@ -35,10 +35,11 @@ class Post extends React.Component {
     return (
       <div className="post">
         <div className="UserName">
-          
-          <FontAwesomeIcon icon={faUserCircle} size="lg" /> Username
+          <FontAwesomeIcon icon={faUserCircle} size="lg" /> username
         </div>
+        <div  className="image">
         <img src={this.props.image} />
+        </div>
         <p><FontAwesomeIcon className="Heart" icon={faHeart} size="xs" /> {this.props.likes}</p>
         <h1>{this.props.title}</h1>
         <TagList tags={this.props.tags} />
