@@ -23,8 +23,8 @@ class Feed extends React.Component {
 
   render() {
     return (
-      <div className="container">
-        {this.state.posts.map(post => {
+      <div className="Feed d-flex flex-wrap">
+        {this.state.posts.map((post, index) => {
           return (
             <Post
               image={post.image}
@@ -32,6 +32,7 @@ class Feed extends React.Component {
               likes={post.likes}
               tags={post.tags}
               created={post.created}
+              key={index}
             />
           );
         })}

@@ -23,24 +23,19 @@ class Post extends React.Component {
     };
   }
 
-  componentDidMount() {
-    fetch("https://my-json-server.typicode.com/evyros/fake-api/posts")
-      .then(res => res.json())
-      .then(tags => {
-        this.setState({ tags });
-      });
-  }
-
   render() {
     return (
       <div className="post">
         <div className="UserName">
           <FontAwesomeIcon icon={faUserCircle} size="lg" /> username
         </div>
-        <div  className="image">
-        <img src={this.props.image} />
+        <div className="image">
+          <img src={this.props.image} alt="postimage" />
         </div>
-        <p><FontAwesomeIcon className="Heart" icon={faHeart} size="xs" /> {this.props.likes}</p>
+        <p>
+          <FontAwesomeIcon className="Heart" icon={faHeart} size="xs" />{" "}
+          {this.props.likes}
+        </p>
         <h1>{this.props.title}</h1>
         <TagList tags={this.props.tags} />
         <Moment className="Date" format="MMM DD YYYY" unix>

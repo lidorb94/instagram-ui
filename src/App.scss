@@ -1,4 +1,19 @@
 body {
-    font-family: 'Titillium Web', sans-serif;
-    background: url("./bacground.png");
+  font-family: "Titillium Web", sans-serif;
+  background: url("./background.png");
+}
+
+.bg-light {
+  border-bottom: #17a2b8 solid 5px;
+  box-sizing: border-box;
+}
+
+.navbar {
+  padding: 0 0 0 10px;
+}
+
+.navbar-toggler {
+    padding: 2px;
+    line-height: 0;
+    margin: 10px;
 }

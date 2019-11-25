@@ -4,7 +4,8 @@ margin: 0;
 
 .Tag {
     border-radius: 10%;
-    background-color: lightsteelblue;
+    background-color: #f8f9fa;
+    color: #17a2b8;
     margin: 5px;
     padding: 0 5px 0 5px;
     cursor: pointer;
@@ -12,6 +13,7 @@ margin: 0;
 
 
     &:hover {
-        background-color: rgb(218, 230, 248);
+        // background-color: rgb(218, 230, 248);
+        color:black;
     }
 }

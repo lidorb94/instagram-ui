@@ -4,6 +4,7 @@ import Header from "./Header/Header";
 import Feed from "./Feed/Feed";
 import Profile from "./Profile/Profile";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import CreatePost from "./CreatePost/CreatePost";
 
 class App extends React.Component {
   render() {
@@ -11,10 +12,13 @@ class App extends React.Component {
         <Router>
         <div className="App">
           <Header />
-          <main>
+          <main className="container">
             <Switch>
               <Route path="/profile">
                 <Profile />
+              </Route>
+              <Route path="/post/create">
+                <CreatePost />
               </Route>
               <Route path="/">
                 <Feed />

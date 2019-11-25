@@ -1,9 +1,4 @@
 .post {
-  // display: flex;
-  // flex-direction: column;
-  // border: 1px solid lightgrey;
-  // margin: 20px;
-  // width: 330px;
   display: flex;
   flex-direction: column;
   width: 330px;
@@ -13,12 +8,6 @@
   text-align: left;
   background-color: #fefefe;
 
-  // .image {
-  //   background: palevioletred;
-  //   height: 200px;
-  //   width: 330px;
-  // }
-
   img {
     width: 328px;
     height: 200px;
@@ -26,8 +15,6 @@
     transition: all 0.5s ease-in-out;
 
     &:hover {
-      // opacity: 0.8;
-      // width: 328px;
       height: 300px;
     }
   }

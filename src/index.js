@@ -20,7 +20,7 @@ const LoadingIndicator = props => {
           marginTop: "250px"
         }}
       >
-        <Loader type="Oval" color="lightgrey" height="100" width="100" />
+        <Loader type="Oval" color="lightgrey"  />
       </div>
     )
   );

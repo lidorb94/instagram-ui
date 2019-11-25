@@ -17,8 +17,8 @@ class TagList extends React.Component {
   render() {
     return (
       <div className="Tags">
-        {this.props.tags.map(tag => {
-          return <span className="Tag">#{tag}</span>;
+        {this.props.tags.map((tag, index) => {
+          return <span className="Tag" key={index}> #{tag} </span>;
         })}
       </div>
     );
