@@ -1,7 +1,36 @@
-input[type="file"] {
-    display: none;
-}
+.CreatePost {
+  .react-tagsinput-tag {
+    background-color: #17a2b8;
+    color: #fff;
+    border: 1px lightgrey solid;
+    font-family: "Titillium Web", sans-serif;
+  }
 
-.custom-file-upload {
+  input[type="file"] {
+    display: none;
+  }
+
+  .custom-file-upload {
     cursor: pointer;
+  }
+
+  .form-control {
+    padding: 5px 0 0 5px;
+    height: auto;
+    border: 1px lightgrey solid;
+  }
+
+  .react-tagsinput-input {
+    font-family: "Titillium Web", sans-serif;
+    width: 200px;
+  }
+
+  .title-wrapper {
+    height: 40px;
+  }
+
+  .TagsMessage {
+    padding: 5px;
+    font-size: 12px;
+  }
 }
